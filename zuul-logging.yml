@@ -1,7 +1,7 @@
 # Contains additional Spring settings
 spring: 
     zipkin:
-        baseUrl: '{cipher}b29c4acc13d764678e835d4d3524518abb8b34873bf42c955abdbbeefc053b149481f409f47644a4d5270785e4f859b7'
+        baseUrl: http://distributed-tracer.apps.cl-east-dev02.cf.ford.com
     sleuth:
       sampler:
         percentage: 1.0
