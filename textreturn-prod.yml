@@ -1,0 +1,22 @@
+name: textreturn
+services:
+    state:
+        method: GET
+        service: VEHICLE-STATE
+    command:
+        method: GET, POST
+        service: COMMAND-API
+    schedule:
+        method: POST
+        service: SCHEDULER-API
+        
+parent: 
+    present:
+        foo: dey, tok
+        bar: ar, jerbs
+    later:
+        foo: dey, dok
+        mar: r, jeurbs
+        
+        
+test: prodss
