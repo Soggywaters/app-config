@@ -1,0 +1,12 @@
+# Contains additional Spring settings
+spring: 
+    zipkin:
+        baseUrl: '{cipher}b29c4acc13d764678e835d4d3524518abb8b34873bf42c955abdbbeefc053b149481f409f47644a4d5270785e4f859b7'
+    sleuth:
+      sampler:
+        percentage: 1.0
+        
+# Set logging levels and which classes log information
+logging:
+  level:
+    com.ford.griffin.fmp.zuul.filters: trace

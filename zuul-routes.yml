@@ -1,0 +1,26 @@
+# Zuul properties
+# Removes the direct route for a service connected to Eureka (i.e. - without this, a user can just go to zuul.com/<serviceId>/** and would still work). This way, all routes to any service must go through a specified path.
+zuul:
+  ignored-services: "*"
+  prefix: 
+  routes:
+    command-api-command: 
+      path: /vehicles/**/command
+      stripPrefix: false
+      serviceId: COMMAND-API
+    vehicle-state-state:
+      path: /vehicles/**/state
+      stripPrefix: false
+      serviceId: VEHICLE-STATE
+    scheduler-api-schedule:
+      path: /vehicles/**/schedule
+      stripPrefix: false
+      serviceId: SCHEDULER-API
+    textreturn:
+      path: /vehicles/**/sayHello
+      stripPrefix: false
+      serviceId: TEXTRETURN
+    textretur1n:
+      path: /vehicles/**/**/sayHello
+      stripPrefix: false
+      serviceId: TEXTRETURN

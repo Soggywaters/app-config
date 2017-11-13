@@ -1,0 +1,16 @@
+# Azure OAuth2 properties
+azure:
+  tenantId: '{cipher}714a70cebdb8e6a2fa564470c4d60fd4952239630f6e40ebcb44a87a88f8eb6f58013556ff6b6a5ec6dae8b31be90f9da6bd061654191f1d2262e2c1749d9475'
+  oauth2:
+    v1:
+      resource:
+        wellKnownEndpoint: https://login.microsoftonline.com/${azure.tenantId}/.well-known/openid-configuration
+        keySource: https://login.microsoftonline.com/${azure.tenantId}/discovery/keys
+
+# Security management
+management:
+  security:
+    enabled: false
+security:
+  basic:
+    enabled: false
