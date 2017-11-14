@@ -1,10 +1,10 @@
 # Contains additional Spring settings
 spring: 
-    zipkin:
-        baseUrl: http://distributed-tracer.apps.cl-east-dev02.cf.ford.com
-    sleuth:
-      sampler:
-        percentage: 1.0
+  zipkin:
+      baseUrl: http://distributed-tracer.apps.cl-east-dev02.cf.ford.com
+  sleuth:
+    sampler:
+      percentage: 1.0
         
 # Set logging levels and which classes log information
 logging:
