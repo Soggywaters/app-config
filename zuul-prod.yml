@@ -1,13 +1,4 @@
 # Zuul specific properties
-zuul:
-  host:
-    connect-timeout-millis: 30000
-    socket-timeout-millis: 30000
-  SendErrorFilter:
-    error:
-      disable: false
-    pre:
-      disable: false
 hystrix:
   command:
     default:
