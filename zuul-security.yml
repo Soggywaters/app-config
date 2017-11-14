@@ -1,6 +1,6 @@
 # Azure OAuth2 properties
 azure:
-  tenantId: '{cipher}714a70cebdb8e6a2fa564470c4d60fd4952239630f6e40ebcb44a87a88f8eb6f58013556ff6b6a5ec6dae8b31be90f9da6bd061654191f1d2262e2c1749d9475'
+  tenantId: '{cipher}27c43ed58dedea072f18cae3230ea9cce7101a3e801c235db7a4d26ab7c27e535198d7ebc420e5758aa7d40f1412e85fcf13d2529a236f21cb0254b56f72bead'
   oauth2:
     v1:
       resource:
