@@ -1,9 +1,6 @@
 # Zuul properties
 # Removes the direct route for a service connected to Eureka (i.e. - without this, a user can just go to zuul.com/<serviceId>/** and would still work). This way, all routes to any service must go through a specified path.
 zuul:
-  host:
-    connect-timeout-millis: 30000
-    socket-timeout-millis: 30000
   SendErrorFilter:
     error:
       disable: false
