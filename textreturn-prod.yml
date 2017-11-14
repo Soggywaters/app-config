@@ -17,6 +17,10 @@ parent:
     later:
         foo: dey, dok
         mar: r, jeurbs
-        
-        
+spring:
+  zipkin:
+      baseUrl: http://distributed-tracer.apps.cl-east-dev02.cf.ford.com
+  sleuth:
+    sampler:
+      percentage: 1.0
 test: prodss
