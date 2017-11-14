@@ -6,11 +6,3 @@ azure:
       resource:
         wellKnownEndpoint: https://login.microsoftonline.com/${azure.tenantId}/.well-known/openid-configuration
         keySource: https://login.microsoftonline.com/${azure.tenantId}/discovery/keys
-
-# Security management
-management:
-  security:
-    enabled: false
-security:
-  basic:
-    enabled: false
